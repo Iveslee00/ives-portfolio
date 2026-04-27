@@ -1,0 +1,1378 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Ives Lee — 設計總監 / 數位體驗。在電商、AI 與品牌之間，打磨安靜而商業的設計。" />
+  <title>Ives Lee · 設計總監 / 數位體驗</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500&family=Noto+Sans+TC:wght@200;300;400;500;700&display=swap"
+    rel="stylesheet"
+  />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="is-loading">
+
+  <!-- ============= LOADER ============= -->
+  <div class="loader" aria-hidden="true">
+    <div class="loader__inner">
+      <span class="loader__mark">IVES&nbsp;DESIGN</span>
+      <span class="loader__bar"><span></span></span>
+      <span class="loader__label">Portfolio · Loading</span>
+    </div>
+  </div>
+
+  <!-- ============= CURSOR ============= -->
+  <div class="cursor" aria-hidden="true"></div>
+  <div class="cursor cursor--dot" aria-hidden="true"></div>
+
+  <!-- ============= 背景動畫層（純黑 + 白線 + 圓）============= -->
+  <div class="bg-fx" aria-hidden="true">
+    <div class="bg-grid" data-parallax-bg="0.15"></div>
+    <span class="bg-scan"></span>
+    <span class="bg-line bg-line--h1"></span>
+    <span class="bg-line bg-line--h2"></span>
+    <span class="bg-line bg-line--v1"></span>
+    <span class="bg-line bg-line--v2"></span>
+
+    <!-- 製圖式圓形元素 — 多層次：羅盤 / 虛線 / 中圓 / 小點 -->
+    <svg class="bg-circle bg-circle--lg" viewBox="-50 -50 100 100" preserveAspectRatio="xMidYMid meet">
+      <circle r="48" fill="none" stroke="rgba(244,241,234,0.05)" stroke-width="0.12"/>
+      <circle r="44" fill="none" stroke="rgba(244,241,234,0.025)" stroke-width="0.08" stroke-dasharray="0.5 0.8"/>
+      <line x1="0" y1="-48" x2="0" y2="-44" stroke="rgba(244,241,234,0.18)" stroke-width="0.18"/>
+      <line x1="0" y1="48"  x2="0" y2="44"  stroke="rgba(244,241,234,0.18)" stroke-width="0.18"/>
+      <line x1="-48" y1="0" x2="-44" y2="0" stroke="rgba(244,241,234,0.18)" stroke-width="0.18"/>
+      <line x1="48" y1="0"  x2="44" y2="0"  stroke="rgba(244,241,234,0.18)" stroke-width="0.18"/>
+      <circle r="0.5" fill="rgba(255,66,0,0.7)"/>
+    </svg>
+
+    <svg class="bg-circle bg-circle--sm" viewBox="-50 -50 100 100" preserveAspectRatio="xMidYMid meet">
+      <circle r="48" fill="none" stroke="rgba(244,241,234,0.06)" stroke-width="0.18" stroke-dasharray="2 3"/>
+    </svg>
+
+    <!-- 中圓（左中位置）— 雙層細圓 -->
+    <svg class="bg-circle bg-circle--md" viewBox="-50 -50 100 100" preserveAspectRatio="xMidYMid meet">
+      <circle r="48" fill="none" stroke="rgba(244,241,234,0.04)" stroke-width="0.1"/>
+      <circle r="38" fill="none" stroke="rgba(244,241,234,0.06)" stroke-width="0.12" stroke-dasharray="1.5 2"/>
+      <circle r="0.4" fill="rgba(244,241,234,0.4)"/>
+    </svg>
+
+    <!-- 細圓圈（線條交會處的座標標）-->
+    <span class="bg-mark bg-mark--1"></span>
+    <span class="bg-mark bg-mark--2"></span>
+
+    <div class="bg-frame" aria-hidden="true"></div>
+  </div>
+
+  <!-- ============= NAV ============= -->
+  <header class="nav" role="banner">
+    <div class="nav__inner">
+      <a href="#top" class="nav__logo" aria-label="Ives Lee · 首頁">
+        <span class="logo-mark">IL</span>
+        <span class="logo-divider"></span>
+        <span class="logo-name">Ives&nbsp;Lee</span>
+      </a>
+
+      <nav class="nav__links" aria-label="主選單">
+        <a href="#about">關於</a>
+        <a href="#skills">專業</a>
+        <a href="#resume">履歷</a>
+        <a href="#work">作品</a>
+        <a href="#play">實驗</a>
+        <a href="#contact">聯絡</a>
+      </nav>
+
+      <button class="nav__toggle" aria-label="切換選單" aria-expanded="false">
+        <span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- ============= MAIN ============= -->
+  <main id="top">
+
+    <!-- ============= SPLASH / 滿版進入頁 ============= -->
+    <section class="splash" aria-labelledby="splash-name">
+      <!-- 若要放黑白照片，把 img 解開：<img src="your-photo.jpg" alt="Ives Lee" /> -->
+      <div class="splash__bg" aria-hidden="true"></div>
+
+      <!-- 主內容 -->
+      <div class="splash__content">
+        <p class="splash__eyebrow">
+          <span class="splash__dot"></span>
+          Portfolio · MMXXVI
+        </p>
+
+        <h1 id="splash-name" class="splash__name">
+          <span class="splash__name-word splash__name-word--solid" style="--d:0ms">DESIGN</span>
+          <span class="splash__name-word splash__name-word--solid" style="--d:160ms">PORTFOLIO</span>
+        </h1>
+
+        <p class="splash__role">Design Lead&nbsp;·&nbsp;E-commerce &amp; AI Experience</p>
+
+        <p class="splash__intro">
+          在電商、品牌與 AI 之間，<br />
+          建立能轉換的設計與數位體驗。
+        </p>
+
+        <button class="splash__cta" data-enter>
+          <span>進入作品集</span>
+          <svg width="14" height="22" viewBox="0 0 14 22" fill="none" aria-hidden="true">
+            <path d="M7 0v20M1 14l6 6 6-6" stroke="currentColor" stroke-width="1" />
+          </svg>
+        </button>
+      </div>
+
+      <!-- 角落編輯標記 -->
+      <span class="splash__corner splash__corner--tl">N° 01 / 04</span>
+      <span class="splash__corner splash__corner--tr">Ives Lee · 2026</span>
+      <span class="splash__corner splash__corner--bl">設計主管 / 數位體驗</span>
+      <span class="splash__corner splash__corner--br">Portfolio · Selected Works</span>
+
+    </section>
+
+    <!-- ============= HERO（含關於）============= -->
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero__top">
+        <div class="hero__meta" data-parallax="0.06">
+          <span class="dot"></span>
+          <span>2026 · 開放策略 / 設計合作</span>
+        </div>
+      </div>
+
+      <div class="hero__main">
+        <div class="hero__intro" id="about" data-parallax="0.04">
+          <p class="section-tag hero__eyebrow">(關於 / About)</p>
+          <h1 id="hero-title" class="hero__lede">
+            <span class="reveal-line"><span>把模糊的商業問題，</span></span>
+            <span class="reveal-line"><span>轉化為<em>克制、銳利</em></span></span>
+            <span class="reveal-line"><span>而能落地的數位體驗。</span></span>
+          </h1>
+
+          <div class="hero__body">
+            <p>
+              長期在品牌、電商與數位產品之間工作 —
+              面對模糊的商業問題，透過結構、節奏與語言，
+              轉化為可被理解與使用的體驗。
+              設計不只是視覺，而是<em>幫助品牌做出正確決策</em>的一種方式。
+            </p>
+            <p>
+              近年持續走在 AI 應用的前端，將生成式模型與自動化流程
+              導入設計與內容生產。關注的不只是效率，
+              而是如何在新技術之下，仍維持設計的判斷力、節奏與商業價值。
+            </p>
+          </div>
+        </div>
+
+        <figure class="hero__portrait" data-parallax="-0.1">
+          <div class="hero__portrait-frame">
+            <!-- 將下方 div 替換為你的照片：<img src="your-photo.jpg" alt="Ives Lee" /> -->
+            <div class="hero__portrait-placeholder"  aria-hidden="true">
+              <!-- <img src="images/800x1000.jpg" alt="Ives Lee" /> -->
+              <span class="hero__portrait-initials">IL</span>
+            </div>
+          </div>
+        </figure>
+      </div>
+
+      <div class="hero__foot">
+        <div class="hero__sig">
+          <p class="hero__name">Ives&nbsp;Lee</p>
+          <p class="hero__role">Design Lead &nbsp;/&nbsp; Digital Experience</p>
+        </div>
+
+        <a href="#work" class="cta" data-magnetic>
+          <span>觀看作品</span>
+          <svg width="22" height="10" viewBox="0 0 22 10" fill="none" aria-hidden="true">
+            <path d="M0 5h20M16 1l4 4-4 4" stroke="currentColor" stroke-width="1" />
+          </svg>
+        </a>
+      </div>
+
+    </section>
+
+    <!-- ============= SKILLS ============= -->
+    <section id="skills" class="skills" aria-labelledby="skills-title">
+      <div class="section-head">
+        <p class="section-tag" data-fade>(專業 / Capabilities)</p>
+        <h2 id="skills-title" class="section-title" data-fade>
+          設計 × 電商 × AI 的整合能力。
+        </h2>
+      </div>
+
+      <ol class="skill-list">
+        <li class="skill" data-fade>
+          <span class="skill__num">01</span>
+          <h3 class="skill__title">設計策略</h3>
+          <p class="skill__items">品牌視覺 · 檔期策略 · 商業轉換思維</p>
+        </li>
+        <li class="skill" data-fade>
+          <span class="skill__num">02</span>
+          <h3 class="skill__title">電商體驗</h3>
+          <p class="skill__items">商品頁設計 · UI / UX · 轉換優化</p>
+        </li>
+        <li class="skill" data-fade>
+          <span class="skill__num">03</span>
+          <h3 class="skill__title">AI 應用</h3>
+          <p class="skill__items">Prompt 設計 · 自動化流程 · 內容生成</p>
+        </li>
+        <li class="skill" data-fade>
+          <span class="skill__num">04</span>
+          <h3 class="skill__title">前端理解</h3>
+          <p class="skill__items">HTML / CSS · 模組設計 · RWD</p>
+        </li>
+        <li class="skill" data-fade>
+          <span class="skill__num">05</span>
+          <h3 class="skill__title">視覺設計</h3>
+          <p class="skill__items">KV 設計 · 品牌延伸 · 平面設計</p>
+        </li>
+        <li class="skill" data-fade>
+          <span class="skill__num">06</span>
+          <h3 class="skill__title">團隊協作</h3>
+          <p class="skill__items">跨部門溝通 · 專案主導 · 向上管理</p>
+        </li>
+      </ol>
+
+      <div class="tools" data-fade>
+        <span class="tools__label">慣用工具</span>
+        <ul class="tools__list">
+          <li>Photoshop</li><li>Illustrator</li><li>Figma</li><li>VS Code</li>
+          <li>GPT</li><li>Midjourney</li><li>n8n</li><li>Zapier</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ============= RESUME / 履歷 ============= -->
+    <section id="resume" class="resume" aria-labelledby="resume-title">
+      <div class="section-head">
+        <p class="section-tag" data-fade>(履歷 / Experience)</p>
+        <h2 id="resume-title" class="section-title" data-fade>
+          8+ 年設計經驗 ·<br />從電商設計到數位體驗決策。
+        </h2>
+      </div>
+
+      <ol class="resume-list">
+        <li class="resume-item resume-item--current" data-fade>
+          <span class="resume-item__dot" aria-hidden="true"></span>
+          <div class="resume-item__main">
+            <p class="resume-item__period">2022 ─ 至今</p>
+            <p class="resume-item__role">設計課長 · Design Lead</p>
+            <h3 class="resume-item__company">新光三越 Shin Kong Mitsukoshi</h3>
+            <p class="resume-item__desc">
+              負責電商平台與品牌視覺策略，從大型檔期設計、品牌識別延伸到網站體驗規劃，
+              建立一致且可擴展的設計系統。
+            </p>
+            <p class="resume-item__desc">
+              近年主導 AI 與自動化流程導入，將生成式模型應用於商品內容、頁面結構與設計製作流程中，
+              重構傳統以圖片為主的電商呈現方式。透過模組化與語意化內容設計，
+              提升製作效率、搜尋能見度與轉換表現，並持續探索 AI 在電商場景中的實際落地方式。
+            </p>
+            <p class="resume-item__desc resume-item__quote">
+              <em>將設計從視覺輸出，轉變為可被優化與放大的商業系統。</em>
+            </p>
+            <p class="resume-item__tags">AI 導入 · 電商轉換 · 設計策略 · 自動化流程</p>
+          </div>
+        </li>
+
+        <li class="resume-item" data-fade>
+          <span class="resume-item__dot" aria-hidden="true"></span>
+          <div class="resume-item__main">
+            <p class="resume-item__period">2019 ─ 2022</p>
+            <p class="resume-item__role">電商視覺設計師</p>
+            <h3 class="resume-item__company">富邦 momo 購物網</h3>
+            <p class="resume-item__desc">
+              負責大型電商檔期活動頁、商品頁與品牌視覺設計，熟悉高流量電商運作邏輯。
+            </p>
+            <p class="resume-item__desc">
+              透過視覺節奏與資訊層級設計，優化使用者瀏覽動線與點擊行為，
+              累積以數據為導向的設計經驗，強化轉換率與活動效益。
+            </p>
+            <p class="resume-item__tags">電商設計 · 檔期活動 · 轉換優化</p>
+          </div>
+        </li>
+
+        <li class="resume-item" data-fade>
+          <span class="resume-item__dot" aria-hidden="true"></span>
+          <div class="resume-item__main">
+            <p class="resume-item__period">2017 ─ 2019</p>
+            <p class="resume-item__role">視覺設計師</p>
+            <h3 class="resume-item__company">木棉花國際</h3>
+            <p class="resume-item__desc">
+              負責動畫 IP 視覺設計與延伸應用，包含宣傳素材、商品設計與活動視覺。
+            </p>
+            <p class="resume-item__desc">
+              擅長將內容與品牌語言轉化為具吸引力的商業視覺，建立 IP 與消費者之間的視覺連結。
+            </p>
+            <p class="resume-item__tags">IP 設計 · 視覺延伸 · 品牌設計</p>
+          </div>
+        </li>
+
+        <li class="resume-item resume-item--current" data-fade>
+          <span class="resume-item__dot" aria-hidden="true"></span>
+          <div class="resume-item__main">
+            <p class="resume-item__period">2024 ─ 至今</p>
+            <p class="resume-item__role">主導專案 · Lead Initiative</p>
+            <h3 class="resume-item__company">AI / 自動化應用（內部專案）</h3>
+            <p class="resume-item__desc">
+              建立 AI 驅動的設計與內容工作流，包含商品資料結構化、頁面模組化與內容生成系統。
+            </p>
+            <p class="resume-item__desc">
+              透過 GPT、Midjourney 與自動化工具整合，提升設計產出效率，並優化 SEO 與使用者體驗，
+              讓電商內容從靜態展示轉為可被理解與擴展的系統。
+            </p>
+            <p class="resume-item__tags">AI 應用 · 工作流設計 · 自動化</p>
+          </div>
+        </li>
+      </ol>
+
+      <!-- 品牌 / 經歷 -->
+      <div class="clients" data-fade>
+        <span class="clients__label">品牌 / 經歷</span>
+        <ul class="clients__list">
+          <li>新光三越</li>
+          <li>beautySTAGE</li>
+          <li>SKM Online</li>
+          <li>momo 購物網</li>
+          <li>木棉花國際</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ============= WORK ============= -->
+    <section id="work" class="work" aria-labelledby="work-title">
+      <div class="section-head">
+        <p class="section-tag" data-fade>(重點專案 / Selected Work)</p>
+        <h2 id="work-title" class="section-title" data-fade>
+          以清晰、轉換與工藝為標準的<br />跨領域案例集。
+        </h2>
+      </div>
+
+      <!-- Tabs -->
+      <nav class="work-tabs" role="tablist" data-fade>
+        <button class="work-tab is-active" data-tab="all" role="tab" aria-selected="true">
+          <span class="work-tab__num">·</span>全部
+        </button>
+        <button class="work-tab" data-tab="ai" role="tab">
+          <span class="work-tab__num">01</span>AI 專案
+        </button>
+        <button class="work-tab" data-tab="web" role="tab">
+          <span class="work-tab__num">02</span>網頁設計
+        </button>
+        <button class="work-tab" data-tab="graphic" role="tab">
+          <span class="work-tab__num">03</span>平面作品
+        </button>
+        <button class="work-tab" data-tab="motion" role="tab">
+          <span class="work-tab__num">04</span>影像剪輯
+        </button>
+      </nav>
+
+      <ol class="cases" data-active-category="all" role="list">
+
+        <!-- ============ 網頁設計 ============ -->
+        <li class="case" data-category="web" data-fade>
+          <a href="#" class="case__link" data-case="01" aria-label="開啟案例：靜謐之肌">
+            <div class="case__index">01</div>
+            <div class="case__media" aria-hidden="true">
+              <span class="case__fig">Fig. 01</span>
+              <div class="case__art case__art--01"><span class="glyph">A.</span></div>
+            </div>
+            <div class="case__meta">
+              <div>
+                <h3 class="case__title">靜謐之肌</h3>
+                <p class="case__desc">
+                  東京護膚品牌的 DTC 官網重建 — 提升 38% 轉換率、頁面負載減半，
+                  讓品牌語氣從喧嘩回到耳語。
+                </p>
+              </div>
+              <dl class="case__spec">
+                <div><dt>年份</dt><dd>2025</dd></div>
+                <div><dt>類型</dt><dd>網頁 · DTC</dd></div>
+                <div><dt>角色</dt><dd>設計總監</dd></div>
+                <div><dt>技術</dt><dd>Hydrogen · Sanity</dd></div>
+              </dl>
+            </div>
+            <div class="case__arrow" aria-hidden="true">
+              <svg width="28" height="14" viewBox="0 0 28 14" fill="none">
+                <path d="M0 7h26M22 1l5 6-5 6" stroke="currentColor" stroke-width="1" />
+              </svg>
+            </div>
+          </a>
+        </li>
+
+        <!-- ============ AI 專案 ============ -->
+        <li class="case" data-category="ai" data-fade>
+          <a href="#" class="case__link" data-case="02" aria-label="開啟案例：Lumen AI">
+            <div class="case__index">02</div>
+            <div class="case__media" aria-hidden="true">
+              <span class="case__fig">Fig. 02</span>
+              <div class="case__art case__art--02"><span class="glyph">L/</span></div>
+            </div>
+            <div class="case__meta">
+              <div>
+                <h3 class="case__title">Lumen AI</h3>
+                <p class="case__desc">
+                  AI 商品文案副駕 — 把堆疊的商品資料，轉成商家能立即行動的語言。
+                  從產品定位、介面到引導流程的端到端設計。
+                </p>
+              </div>
+              <dl class="case__spec">
+                <div><dt>年份</dt><dd>2025</dd></div>
+                <div><dt>類型</dt><dd>AI · SaaS</dd></div>
+                <div><dt>角色</dt><dd>創始設計師</dd></div>
+                <div><dt>技術</dt><dd>Next · LangChain</dd></div>
+              </dl>
+            </div>
+            <div class="case__arrow" aria-hidden="true">
+              <svg width="28" height="14" viewBox="0 0 28 14" fill="none">
+                <path d="M0 7h26M22 1l5 6-5 6" stroke="currentColor" stroke-width="1" />
+              </svg>
+            </div>
+          </a>
+        </li>
+
+        <!-- ============ 網頁設計 ============ -->
+        <li class="case" data-category="web" data-fade>
+          <a href="#" class="case__link" data-case="03" aria-label="開啟案例：Norden Studio">
+            <div class="case__index">03</div>
+            <div class="case__media" aria-hidden="true">
+              <span class="case__fig">Fig. 03</span>
+              <div class="case__art case__art--03"><span class="glyph">N°</span></div>
+            </div>
+            <div class="case__meta">
+              <div>
+                <h3 class="case__title">Norden Studio</h3>
+                <p class="case__desc">
+                  北歐家具編輯品牌的識別、藝術指導與訂製官網。
+                  關於克制的研究 — 字體、紙張、石材與程式碼。
+                </p>
+              </div>
+              <dl class="case__spec">
+                <div><dt>年份</dt><dd>2024</dd></div>
+                <div><dt>類型</dt><dd>網頁 · 品牌</dd></div>
+                <div><dt>角色</dt><dd>創意總監</dd></div>
+                <div><dt>技術</dt><dd>Astro · Sanity</dd></div>
+              </dl>
+            </div>
+            <div class="case__arrow" aria-hidden="true">
+              <svg width="28" height="14" viewBox="0 0 28 14" fill="none">
+                <path d="M0 7h26M22 1l5 6-5 6" stroke="currentColor" stroke-width="1" />
+              </svg>
+            </div>
+          </a>
+        </li>
+
+        <!-- ============ 網頁設計 ============ -->
+        <li class="case" data-category="web" data-fade>
+          <a href="#" class="case__link" data-case="04" aria-label="開啟案例：Maison OS">
+            <div class="case__index">04</div>
+            <div class="case__media" aria-hidden="true">
+              <span class="case__fig">Fig. 04</span>
+              <div class="case__art case__art--04"><span class="glyph">M⌁</span></div>
+            </div>
+            <div class="case__meta">
+              <div>
+                <h3 class="case__title">Maison OS</h3>
+                <p class="case__desc">
+                  多品牌零售集團的設計與營運平台。
+                  一套語言，貫穿十個品牌、十二個市場、數百個觸點。
+                </p>
+              </div>
+              <dl class="case__spec">
+                <div><dt>年份</dt><dd>2024</dd></div>
+                <div><dt>類型</dt><dd>網頁 · 平台</dd></div>
+                <div><dt>角色</dt><dd>設計部主管</dd></div>
+                <div><dt>技術</dt><dd>Figma · React</dd></div>
+              </dl>
+            </div>
+            <div class="case__arrow" aria-hidden="true">
+              <svg width="28" height="14" viewBox="0 0 28 14" fill="none">
+                <path d="M0 7h26M22 1l5 6-5 6" stroke="currentColor" stroke-width="1" />
+              </svg>
+            </div>
+          </a>
+        </li>
+
+        <!-- ============ AI 專案 ============ -->
+        <li class="case" data-category="ai" data-fade>
+          <a href="#" class="case__link" data-case="05" aria-label="開啟案例：Studio Bot">
+            <div class="case__index">05</div>
+            <div class="case__media" aria-hidden="true">
+              <span class="case__fig">Fig. 05</span>
+              <div class="case__art case__art--05"><span class="glyph">S∴</span></div>
+            </div>
+            <div class="case__meta">
+              <div>
+                <h3 class="case__title">Studio Bot</h3>
+                <p class="case__desc">
+                  內部創意自動化套件 — 從設計簡報、情緒板、到草稿輸出，
+                  替團隊節省 70% 前期工時。GPT-4 / Claude / Midjourney 整合。
+                </p>
+              </div>
+              <dl class="case__spec">
+                <div><dt>年份</dt><dd>2025</dd></div>
+                <div><dt>類型</dt><dd>AI · 自動化</dd></div>
+                <div><dt>角色</dt><dd>產品 / 設計</dd></div>
+                <div><dt>技術</dt><dd>GPT-4 · Claude</dd></div>
+              </dl>
+            </div>
+            <div class="case__arrow" aria-hidden="true">
+              <svg width="28" height="14" viewBox="0 0 28 14" fill="none">
+                <path d="M0 7h26M22 1l5 6-5 6" stroke="currentColor" stroke-width="1" />
+              </svg>
+            </div>
+          </a>
+        </li>
+
+        <!-- ============ AI 專案 ============ -->
+        <li class="case" data-category="ai" data-fade>
+          <a href="#" class="case__link" data-case="06" aria-label="開啟案例：Quiet Search">
+            <div class="case__index">06</div>
+            <div class="case__media" aria-hidden="true">
+              <span class="case__fig">Fig. 06</span>
+              <div class="case__art case__art--06"><span class="glyph">Q?</span></div>
+            </div>
+            <div class="case__meta">
+              <div>
+                <h3 class="case__title">Quiet Search</h3>
+                <p class="case__desc">
+                  時尚電商語意搜尋原型 — 向量召回、自然語言查詢、
+                  介面拒絕喧嘩。為下一代購物體驗奠基。
+                </p>
+              </div>
+              <dl class="case__spec">
+                <div><dt>年份</dt><dd>2026</dd></div>
+                <div><dt>類型</dt><dd>AI · 原型</dd></div>
+                <div><dt>角色</dt><dd>研究 / 設計</dd></div>
+                <div><dt>技術</dt><dd>Embedding · Pinecone</dd></div>
+              </dl>
+            </div>
+            <div class="case__arrow" aria-hidden="true">
+              <svg width="28" height="14" viewBox="0 0 28 14" fill="none">
+                <path d="M0 7h26M22 1l5 6-5 6" stroke="currentColor" stroke-width="1" />
+              </svg>
+            </div>
+          </a>
+        </li>
+
+        <!-- ============ 平面作品 ============ -->
+        <li class="case" data-category="graphic" data-fade>
+          <a href="#" class="case__link" data-case="07" aria-label="開啟案例：Type Specimen">
+            <div class="case__index">07</div>
+            <div class="case__media" aria-hidden="true">
+              <span class="case__fig">Fig. 07</span>
+              <div class="case__art case__art--07"><span class="glyph">Aa</span></div>
+            </div>
+            <div class="case__meta">
+              <div>
+                <h3 class="case__title">Type Specimen Vol. 02</h3>
+                <p class="case__desc">
+                  獨立字型廠的編輯式字體規格出版品。
+                  從紙張、印刷到字級系統，全程主導。限量發行 500 本。
+                </p>
+              </div>
+              <dl class="case__spec">
+                <div><dt>年份</dt><dd>2024</dd></div>
+                <div><dt>類型</dt><dd>平面 · 出版</dd></div>
+                <div><dt>角色</dt><dd>藝術指導</dd></div>
+                <div><dt>規格</dt><dd>96 頁 · 平版印刷</dd></div>
+              </dl>
+            </div>
+            <div class="case__arrow" aria-hidden="true">
+              <svg width="28" height="14" viewBox="0 0 28 14" fill="none">
+                <path d="M0 7h26M22 1l5 6-5 6" stroke="currentColor" stroke-width="1" />
+              </svg>
+            </div>
+          </a>
+        </li>
+
+        <!-- ============ 平面作品 ============ -->
+        <li class="case" data-category="graphic" data-fade>
+          <a href="#" class="case__link" data-case="08" aria-label="開啟案例：Mono Annual">
+            <div class="case__index">08</div>
+            <div class="case__media" aria-hidden="true">
+              <span class="case__fig">Fig. 08</span>
+              <div class="case__art case__art--08"><span class="glyph">M.</span></div>
+            </div>
+            <div class="case__meta">
+              <div>
+                <h3 class="case__title">Mono Annual</h3>
+                <p class="case__desc">
+                  科技基金會的年度報告設計 — 以資訊圖表為主軸，
+                  將 142 頁的數據與敘事，轉成可閱讀的當代設計。
+                </p>
+              </div>
+              <dl class="case__spec">
+                <div><dt>年份</dt><dd>2023</dd></div>
+                <div><dt>類型</dt><dd>平面 · 報告</dd></div>
+                <div><dt>角色</dt><dd>主視覺設計</dd></div>
+                <div><dt>規格</dt><dd>142 頁 · 雙語</dd></div>
+              </dl>
+            </div>
+            <div class="case__arrow" aria-hidden="true">
+              <svg width="28" height="14" viewBox="0 0 28 14" fill="none">
+                <path d="M0 7h26M22 1l5 6-5 6" stroke="currentColor" stroke-width="1" />
+              </svg>
+            </div>
+          </a>
+        </li>
+
+        <!-- ============ 平面作品 ============ -->
+        <li class="case" data-category="graphic" data-fade>
+          <a href="#" class="case__link" data-case="09" aria-label="開啟案例：Folio System">
+            <div class="case__index">09</div>
+            <div class="case__media" aria-hidden="true">
+              <span class="case__fig">Fig. 09</span>
+              <div class="case__art case__art--09"><span class="glyph">F/</span></div>
+            </div>
+            <div class="case__meta">
+              <div>
+                <h3 class="case__title">Folio System</h3>
+                <p class="case__desc">
+                  獨立咖啡品牌的多季識別與包裝系統 — 共 18 款 SKU，
+                  共用骨架、各自表情。三年銷量成長 4.6 倍。
+                </p>
+              </div>
+              <dl class="case__spec">
+                <div><dt>年份</dt><dd>2022</dd></div>
+                <div><dt>類型</dt><dd>包裝 · 識別</dd></div>
+                <div><dt>角色</dt><dd>創意總監</dd></div>
+                <div><dt>規格</dt><dd>18 款 SKU</dd></div>
+              </dl>
+            </div>
+            <div class="case__arrow" aria-hidden="true">
+              <svg width="28" height="14" viewBox="0 0 28 14" fill="none">
+                <path d="M0 7h26M22 1l5 6-5 6" stroke="currentColor" stroke-width="1" />
+              </svg>
+            </div>
+          </a>
+        </li>
+
+        <!-- ============ 影像剪輯 ============ -->
+        <li class="case" data-category="motion" data-fade>
+          <a href="#" class="case__link" data-case="10" aria-label="開啟案例：Atelier Film">
+            <div class="case__index">10</div>
+            <div class="case__media" aria-hidden="true">
+              <span class="case__fig">Fig. 10</span>
+              <div class="case__art case__art--10"><span class="glyph">▶</span></div>
+            </div>
+            <div class="case__meta">
+              <div>
+                <h3 class="case__title">Atelier Film</h3>
+                <p class="case__desc">
+                  Atelier Tokyo 的品牌形象短片 — 90 秒慢電影。
+                  腳本、視覺、剪輯一體掌握。坎城短片獎入圍。
+                </p>
+              </div>
+              <dl class="case__spec">
+                <div><dt>年份</dt><dd>2024</dd></div>
+                <div><dt>類型</dt><dd>影像 · 品牌</dd></div>
+                <div><dt>角色</dt><dd>導演 / 剪輯</dd></div>
+                <div><dt>長度</dt><dd>1:30</dd></div>
+              </dl>
+            </div>
+            <div class="case__arrow" aria-hidden="true">
+              <svg width="28" height="14" viewBox="0 0 28 14" fill="none">
+                <path d="M0 7h26M22 1l5 6-5 6" stroke="currentColor" stroke-width="1" />
+              </svg>
+            </div>
+          </a>
+        </li>
+
+        <!-- ============ 影像剪輯 ============ -->
+        <li class="case" data-category="motion" data-fade>
+          <a href="#" class="case__link" data-case="11" aria-label="開啟案例：Lumen Reel">
+            <div class="case__index">11</div>
+            <div class="case__media" aria-hidden="true">
+              <span class="case__fig">Fig. 11</span>
+              <div class="case__art case__art--11"><span class="glyph">▷</span></div>
+            </div>
+            <div class="case__meta">
+              <div>
+                <h3 class="case__title">Lumen Reel</h3>
+                <p class="case__desc">
+                  Lumen AI 的產品宣傳影片 — 以動態介面為主體，
+                  讓抽象的 AI 能力，變成可看見的節奏。
+                </p>
+              </div>
+              <dl class="case__spec">
+                <div><dt>年份</dt><dd>2025</dd></div>
+                <div><dt>類型</dt><dd>影像 · 產品</dd></div>
+                <div><dt>角色</dt><dd>動態設計</dd></div>
+                <div><dt>長度</dt><dd>0:60</dd></div>
+              </dl>
+            </div>
+            <div class="case__arrow" aria-hidden="true">
+              <svg width="28" height="14" viewBox="0 0 28 14" fill="none">
+                <path d="M0 7h26M22 1l5 6-5 6" stroke="currentColor" stroke-width="1" />
+              </svg>
+            </div>
+          </a>
+        </li>
+
+        <!-- ============ 影像剪輯 ============ -->
+        <li class="case" data-category="motion" data-fade>
+          <a href="#" class="case__link" data-case="12" aria-label="開啟案例：Studio Process">
+            <div class="case__index">12</div>
+            <div class="case__media" aria-hidden="true">
+              <span class="case__fig">Fig. 12</span>
+              <div class="case__art case__art--12"><span class="glyph">▸</span></div>
+            </div>
+            <div class="case__meta">
+              <div>
+                <h3 class="case__title">Studio Process</h3>
+                <p class="case__desc">
+                  工作室創作紀錄短片系列 — 七位設計師、七種思考方式。
+                  Vimeo Staff Picks。共三集，每集約 4 分鐘。
+                </p>
+              </div>
+              <dl class="case__spec">
+                <div><dt>年份</dt><dd>2023</dd></div>
+                <div><dt>類型</dt><dd>影像 · 紀錄</dd></div>
+                <div><dt>角色</dt><dd>導演 / 製作</dd></div>
+                <div><dt>長度</dt><dd>3 集 · 各 4:00</dd></div>
+              </dl>
+            </div>
+            <div class="case__arrow" aria-hidden="true">
+              <svg width="28" height="14" viewBox="0 0 28 14" fill="none">
+                <path d="M0 7h26M22 1l5 6-5 6" stroke="currentColor" stroke-width="1" />
+              </svg>
+            </div>
+          </a>
+        </li>
+      </ol>
+
+      <p class="cases-empty" data-empty hidden>
+        該分類目前沒有作品 — 即將上架。
+      </p>
+    </section>
+
+    <!-- ============= PLAYGROUND ============= -->
+    <section id="play" class="play" aria-labelledby="play-title">
+      <div class="section-head">
+        <p class="section-tag" data-fade>(實驗 / Playground)</p>
+        <h2 id="play-title" class="section-title" data-fade>
+          副線實驗 — 工藝與好奇心交會處。
+        </h2>
+      </div>
+
+      <div class="play__grid">
+        <article class="play__card" data-fade>
+          <header><span class="play__num">P/01</span><span class="play__year">2026</span></header>
+          <h3>安靜搜尋</h3>
+          <p>時尚電商的語意搜尋原型 — 向量召回，介面拒絕喧嘩。</p>
+          <span class="play__tag">AI · 原型</span>
+        </article>
+
+        <article class="play__card" data-fade>
+          <header><span class="play__num">P/02</span><span class="play__year">2025</span></header>
+          <h3>字體規格產生器</h3>
+          <p>把 variable font 自動轉成編輯式字體規格頁。</p>
+          <span class="play__tag">前端 · 字體</span>
+        </article>
+
+        <article class="play__card" data-fade>
+          <header><span class="play__num">P/03</span><span class="play__year">2025</span></header>
+          <h3>Studio Bot</h3>
+          <p>內部自動化 — 從簡報到情緒板，幾分鐘完成草稿。</p>
+          <span class="play__tag">自動化 · GPT</span>
+        </article>
+
+        <article class="play__card" data-fade>
+          <header><span class="play__num">P/04</span><span class="play__year">2024</span></header>
+          <h3>慢結帳</h3>
+          <p>關於結帳重新思考的論述與互動 demo — 少即是多。</p>
+          <span class="play__tag">UX · 寫作</span>
+        </article>
+      </div>
+    </section>
+
+    <!-- ============= CONTACT ============= -->
+    <section id="contact" class="contact" aria-labelledby="contact-title">
+      <p class="section-tag" data-fade>(聯絡 / Contact)</p>
+
+      <h2 id="contact-title" class="contact__title sr-only">聯絡資訊</h2>
+
+      <a class="contact__mail" href="mailto:money6022909@gmail.com" data-fade>
+        money6022909@gmail.com
+      </a>
+
+      <div class="contact__channels" data-fade>
+        <a class="contact__channel" href="https://www.linkedin.com/" target="_blank" rel="noopener">
+          <span>LinkedIn</span>
+          <svg width="10" height="10" viewBox="0 0 10 10" fill="none" aria-hidden="true">
+            <path d="M2 8L8 2M3.5 2H8v4.5" stroke="currentColor" stroke-width="1"/>
+          </svg>
+        </a>
+        <a class="contact__channel" href="mailto:money6022909@gmail.com">
+          <span>Email</span>
+          <svg width="10" height="10" viewBox="0 0 10 10" fill="none" aria-hidden="true">
+            <path d="M2 8L8 2M3.5 2H8v4.5" stroke="currentColor" stroke-width="1"/>
+          </svg>
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============= FOOTER ============= -->
+  <footer class="footer">
+    <div class="footer__inner">
+      <p>© 2026 Ives Lee · 版權所有，謹此保留。</p>
+    </div>
+  </footer>
+
+  <!-- ============= MODAL ============= -->
+  <div class="modal" id="modal" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+    <div class="modal__backdrop" data-modal-close></div>
+
+    <div class="modal__panel" tabindex="-1">
+      <button class="modal__close" data-modal-close aria-label="關閉">
+        <span>關閉</span>
+        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true">
+          <path d="M1 1l12 12M13 1L1 13" stroke="currentColor" stroke-width="1" />
+        </svg>
+      </button>
+
+      <div class="modal__scroll">
+        <!-- ====== Case 01 ====== -->
+        <article class="modal__case" data-case="01" hidden>
+          <header class="modal__head">
+            <p class="modal__eyebrow">Case Study · 01 — 護膚 DTC</p>
+            <h2 id="modal-title" class="modal__title">靜謐之肌 ·<br />Atelier Commerce</h2>
+            <p class="modal__lede">
+              以「靜默的奢華」為核心 — 替東京護膚品牌重建 DTC 官網，
+              讓品牌語氣從喧嘩回到耳語，並在六個月內達成顯著的商業成果。
+            </p>
+          </header>
+          <div class="modal__hero modal__hero--01" data-zoom data-zoom-src="" data-caption="Atelier Commerce · Cover">
+            <!-- 1920×1080 封面圖：<img src="case-01-cover.jpg" alt="Atelier Commerce 封面" /> -->
+            <span class="modal__hero-label">Cover</span>
+          </div>
+          <div class="modal__body">
+            <aside class="modal__aside">
+              <dl class="modal__spec">
+                <div><dt>客戶</dt><dd>Atelier Tokyo</dd></div>
+                <div><dt>年份</dt><dd>2025</dd></div>
+                <div><dt>角色</dt><dd>設計總監</dd></div>
+                <div><dt>團隊</dt><dd>4 人</dd></div>
+                <div><dt>時程</dt><dd>14 週</dd></div>
+                <div><dt>技術</dt><dd>Hydrogen · Sanity</dd></div>
+              </dl>
+            </aside>
+            <div class="modal__prose">
+              <h3>挑戰</h3>
+              <p>舊站建立於 2019 年，視覺繁雜、結帳冗長、品牌語氣與門市體驗脫節。品牌方希望在不犧牲質感的前提下，讓官網成為東京旗艦店的延伸。</p>
+              <h3>方法</h3>
+              <p>我帶領 4 人團隊，從品牌語氣、資訊架構、設計系統、到 Headless 電商前端，重新建構整個體驗。每一個元件都用編輯設計的標準審視 — 字體、行距、留白、節奏。</p>
+              <h3>成果</h3>
+              <ul class="modal__metrics">
+                <li><span>+38%</span><em>轉換率提升</em></li>
+                <li><span>−54%</span><em>頁面負載降低</em></li>
+                <li><span>×2.3</span><em>停留時間</em></li>
+              </ul>
+              <div class="modal__gallery">
+                <button type="button" class="modal__img modal__img--a" data-zoom data-zoom-src="" data-caption="Detail · 01">
+                  <!-- 替換為 1600×900 圖片：<img src="path.jpg" alt="Detail 01" /> -->
+                  <span class="modal__img-label">Detail · 01</span>
+                </button>
+                <button type="button" class="modal__img modal__img--b" data-zoom data-zoom-src="" data-caption="Detail · 02">
+                  <!-- 替換為 800×600 圖片 -->
+                  <span class="modal__img-label">Detail · 02</span>
+                </button>
+                <button type="button" class="modal__img modal__img--c" data-zoom data-zoom-src="" data-caption="Detail · 03">
+                  <!-- 替換為 800×600 圖片 -->
+                  <span class="modal__img-label">Detail · 03</span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- ====== Case 02 ====== -->
+        <article class="modal__case" data-case="02" hidden>
+          <header class="modal__head">
+            <p class="modal__eyebrow">Case Study · 02 — AI · SaaS</p>
+            <h2 class="modal__title">Lumen AI ·<br />商品文案副駕</h2>
+            <p class="modal__lede">將堆疊的商品資料，轉成商家能立即行動的語言 — 從產品定位、品牌系統、到操作介面與引導流程的端到端設計。</p>
+          </header>
+          <div class="modal__hero modal__hero--02" data-zoom data-zoom-src="" data-caption="Lumen AI · Cover">
+            <!-- 1920×1080 封面圖：<img src="case-02-cover.jpg" alt="Lumen AI 封面" /> -->
+            <span class="modal__hero-label">Cover</span>
+          </div>
+          <div class="modal__body">
+            <aside class="modal__aside">
+              <dl class="modal__spec">
+                <div><dt>客戶</dt><dd>Lumen Inc.</dd></div>
+                <div><dt>年份</dt><dd>2025</dd></div>
+                <div><dt>角色</dt><dd>創始設計師</dd></div>
+                <div><dt>階段</dt><dd>0 → 1</dd></div>
+                <div><dt>時程</dt><dd>9 個月</dd></div>
+                <div><dt>技術</dt><dd>Next · LangChain</dd></div>
+              </dl>
+            </aside>
+            <div class="modal__prose">
+              <h3>挑戰</h3>
+              <p>AI 副駕產品如何在功能性與品牌感之間取得平衡？介面既要展現智慧，又不能過度神秘 — 商家信任，來自每一次清楚的回饋。</p>
+              <h3>方法</h3>
+              <p>從產品策略開始介入。我與 CEO 共同定義了「副駕」的語氣 — 不是助手，而是同事。設計系統以資訊密度與閱讀節奏為核心，而非典型的 SaaS 風格。</p>
+              <h3>成果</h3>
+              <ul class="modal__metrics">
+                <li><span>120K</span><em>早期等候名單</em></li>
+                <li><span>92%</span><em>引導完成率</em></li>
+                <li><span>$4.2M</span><em>種子輪募資</em></li>
+              </ul>
+              <div class="modal__gallery">
+                <button type="button" class="modal__img modal__img--a" data-zoom data-zoom-src="" data-caption="Detail · 01">
+                  <!-- 替換為 1600×900 圖片：<img src="path.jpg" alt="Detail 01" /> -->
+                  <span class="modal__img-label">Detail · 01</span>
+                </button>
+                <button type="button" class="modal__img modal__img--b" data-zoom data-zoom-src="" data-caption="Detail · 02">
+                  <!-- 替換為 800×600 圖片 -->
+                  <span class="modal__img-label">Detail · 02</span>
+                </button>
+                <button type="button" class="modal__img modal__img--c" data-zoom data-zoom-src="" data-caption="Detail · 03">
+                  <!-- 替換為 800×600 圖片 -->
+                  <span class="modal__img-label">Detail · 03</span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- ====== Case 03 ====== -->
+        <article class="modal__case" data-case="03" hidden>
+          <header class="modal__head">
+            <p class="modal__eyebrow">Case Study · 03 — 家具 · 品牌</p>
+            <h2 class="modal__title">Norden Studio ·<br />北歐家具品牌官網</h2>
+            <p class="modal__lede">識別、藝術指導、訂製官網。一場關於「克制」的完整研究 — 字體、紙張、石材與程式碼之間。</p>
+          </header>
+          <div class="modal__hero modal__hero--03" data-zoom data-zoom-src="" data-caption="Norden Studio · Cover">
+            <!-- 1920×1080 封面圖：<img src="case-03-cover.jpg" alt="Norden Studio 封面" /> -->
+            <span class="modal__hero-label">Cover</span>
+          </div>
+          <div class="modal__body">
+            <aside class="modal__aside">
+              <dl class="modal__spec">
+                <div><dt>客戶</dt><dd>Norden Studio</dd></div>
+                <div><dt>年份</dt><dd>2024</dd></div>
+                <div><dt>角色</dt><dd>創意總監</dd></div>
+                <div><dt>團隊</dt><dd>3 人</dd></div>
+                <div><dt>時程</dt><dd>20 週</dd></div>
+                <div><dt>技術</dt><dd>Astro · Sanity</dd></div>
+              </dl>
+            </aside>
+            <div class="modal__prose">
+              <h3>挑戰</h3>
+              <p>客戶來自第三代家族家具廠，希望重建一個能對應全球市場的品牌系統，並維持北歐工藝的真實感 — 不過度時髦、也不老氣。</p>
+              <h3>方法</h3>
+              <p>從識別系統開始建構。字體、攝影風格、印刷品、官網與門市標識共用一套節奏。網站採用 Astro 與 Sanity，效能極輕，編輯體驗如同寫作。</p>
+              <h3>成果</h3>
+              <ul class="modal__metrics">
+                <li><span>+62%</span><em>國際詢問量</em></li>
+                <li><span>−72%</span><em>頁面負載</em></li>
+                <li><span>4 國</span><em>新市場進入</em></li>
+              </ul>
+              <div class="modal__gallery">
+                <button type="button" class="modal__img modal__img--a" data-zoom data-zoom-src="" data-caption="Detail · 01">
+                  <!-- 替換為 1600×900 圖片：<img src="path.jpg" alt="Detail 01" /> -->
+                  <span class="modal__img-label">Detail · 01</span>
+                </button>
+                <button type="button" class="modal__img modal__img--b" data-zoom data-zoom-src="" data-caption="Detail · 02">
+                  <!-- 替換為 800×600 圖片 -->
+                  <span class="modal__img-label">Detail · 02</span>
+                </button>
+                <button type="button" class="modal__img modal__img--c" data-zoom data-zoom-src="" data-caption="Detail · 03">
+                  <!-- 替換為 800×600 圖片 -->
+                  <span class="modal__img-label">Detail · 03</span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- ====== Case 04 ====== -->
+        <article class="modal__case" data-case="04" hidden>
+          <header class="modal__head">
+            <p class="modal__eyebrow">Case Study · 04 — 零售集團</p>
+            <h2 class="modal__title">Maison OS ·<br />多品牌設計平台</h2>
+            <p class="modal__lede">一套語言，貫穿十個品牌、十二個市場、數百個觸點。整合設計與營運的內部平台，讓設計從產出工具，變成可治理的資產。</p>
+          </header>
+          <div class="modal__hero modal__hero--04" data-zoom data-zoom-src="" data-caption="Maison OS · Cover">
+            <!-- 1920×1080 封面圖：<img src="case-04-cover.jpg" alt="Maison OS 封面" /> -->
+            <span class="modal__hero-label">Cover</span>
+          </div>
+          <div class="modal__body">
+            <aside class="modal__aside">
+              <dl class="modal__spec">
+                <div><dt>客戶</dt><dd>Maison Group</dd></div>
+                <div><dt>年份</dt><dd>2024</dd></div>
+                <div><dt>角色</dt><dd>設計部主管</dd></div>
+                <div><dt>團隊</dt><dd>11 人</dd></div>
+                <div><dt>時程</dt><dd>18 個月</dd></div>
+                <div><dt>技術</dt><dd>Figma · React</dd></div>
+              </dl>
+            </aside>
+            <div class="modal__prose">
+              <h3>挑戰</h3>
+              <p>十個品牌共享後台、共享供應鏈，但前台識別各自為政。如何在共用基礎設施的同時，讓每個品牌仍保有獨立的視覺語氣？</p>
+              <h3>方法</h3>
+              <p>建立「主題化的設計系統」— 一套組件、十套主題、可治理的版本控制。從設計 token 出發，貫穿 Figma、程式碼、與內容管理。</p>
+              <h3>成果</h3>
+              <ul class="modal__metrics">
+                <li><span>−60%</span><em>新頁面工時</em></li>
+                <li><span>10×</span><em>品牌覆蓋</em></li>
+                <li><span>12 國</span><em>市場部署</em></li>
+              </ul>
+              <div class="modal__gallery">
+                <button type="button" class="modal__img modal__img--a" data-zoom data-zoom-src="" data-caption="Detail · 01">
+                  <!-- 替換為 1600×900 圖片：<img src="path.jpg" alt="Detail 01" /> -->
+                  <span class="modal__img-label">Detail · 01</span>
+                </button>
+                <button type="button" class="modal__img modal__img--b" data-zoom data-zoom-src="" data-caption="Detail · 02">
+                  <!-- 替換為 800×600 圖片 -->
+                  <span class="modal__img-label">Detail · 02</span>
+                </button>
+                <button type="button" class="modal__img modal__img--c" data-zoom data-zoom-src="" data-caption="Detail · 03">
+                  <!-- 替換為 800×600 圖片 -->
+                  <span class="modal__img-label">Detail · 03</span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- ====== Case 05 ====== -->
+        <article class="modal__case" data-case="05" hidden>
+          <header class="modal__head">
+            <p class="modal__eyebrow">Case Study · 05 — AI · 自動化</p>
+            <h2 class="modal__title">Studio Bot ·<br />內部創意自動化</h2>
+            <p class="modal__lede">把設計工作室裡瑣碎的「想點子」前期流程，交給多模型協作的內部副駕 — 替團隊節省 70% 工時。</p>
+          </header>
+          <div class="modal__hero modal__hero--05" data-zoom data-zoom-src="" data-caption="Studio Bot · Cover">
+            <!-- 1920×1080 封面圖：<img src="case-05-cover.jpg" alt="Studio Bot 封面" /> -->
+            <span class="modal__hero-label">Cover</span>
+          </div>
+          <div class="modal__body">
+            <aside class="modal__aside">
+              <dl class="modal__spec">
+                <div><dt>客戶</dt><dd>Studio Lin（內部）</dd></div>
+                <div><dt>年份</dt><dd>2025</dd></div>
+                <div><dt>角色</dt><dd>產品 / 設計</dd></div>
+                <div><dt>時程</dt><dd>持續迭代</dd></div>
+                <div><dt>技術</dt><dd>GPT-4 · Claude · MJ</dd></div>
+              </dl>
+            </aside>
+            <div class="modal__prose">
+              <h3>挑戰</h3>
+              <p>設計簡報、情緒板、初稿草圖 — 這些前期工作每個專案都重做一次，浪費團隊大量時間，卻又無法外包。</p>
+              <h3>方法</h3>
+              <p>用 LangChain 串接三個模型 — Claude 寫策略、GPT 寫文案、Midjourney 出視覺，再用一個輕量介面把它們串成可重複使用的工作流。</p>
+              <h3>成果</h3>
+              <ul class="modal__metrics">
+                <li><span>−70%</span><em>前期工時</em></li>
+                <li><span>×3</span><em>提案產出量</em></li>
+                <li><span>內部</span><em>已導入全團隊</em></li>
+              </ul>
+            </div>
+          </div>
+        </article>
+
+        <!-- ====== Case 06 ====== -->
+        <article class="modal__case" data-case="06" hidden>
+          <header class="modal__head">
+            <p class="modal__eyebrow">Case Study · 06 — AI · 原型</p>
+            <h2 class="modal__title">Quiet Search ·<br />語意購物搜尋</h2>
+            <p class="modal__lede">用自然語言找衣服 — 「想要一件能在午後咖啡廳穿的米色針織衫」也能精準命中。為下一代購物體驗奠基。</p>
+          </header>
+          <div class="modal__hero modal__hero--06" data-zoom data-zoom-src="" data-caption="Quiet Search · Cover">
+            <!-- 1920×1080 封面圖：<img src="case-06-cover.jpg" alt="Quiet Search 封面" /> -->
+            <span class="modal__hero-label">Cover</span>
+          </div>
+          <div class="modal__body">
+            <aside class="modal__aside">
+              <dl class="modal__spec">
+                <div><dt>客戶</dt><dd>研究專案</dd></div>
+                <div><dt>年份</dt><dd>2026</dd></div>
+                <div><dt>角色</dt><dd>研究 / 設計</dd></div>
+                <div><dt>狀態</dt><dd>原型 · 內測</dd></div>
+                <div><dt>技術</dt><dd>Embedding · Pinecone</dd></div>
+              </dl>
+            </aside>
+            <div class="modal__prose">
+              <h3>挑戰</h3>
+              <p>傳統電商搜尋仰賴關鍵字 — 顧客的真實意圖（情境、感覺、場合）卻無法被表達。</p>
+              <h3>方法</h3>
+              <p>把商品 metadata、圖片、評論一起做 embedding，用向量資料庫做語意召回，再用 LLM 做 rerank。介面上只做一件事 — 一個搜尋框、一段話、一頁結果。</p>
+              <h3>成果</h3>
+              <ul class="modal__metrics">
+                <li><span>+47%</span><em>點擊率（vs. 關鍵字）</em></li>
+                <li><span>+31%</span><em>加購率</em></li>
+                <li><span>原型</span><em>洽談中</em></li>
+              </ul>
+            </div>
+          </div>
+        </article>
+
+        <!-- ====== Case 07 ====== -->
+        <article class="modal__case" data-case="07" hidden>
+          <header class="modal__head">
+            <p class="modal__eyebrow">Case Study · 07 — 平面 · 出版</p>
+            <h2 class="modal__title">Type Specimen ·<br />Vol. 02</h2>
+            <p class="modal__lede">獨立字型廠的編輯式字體規格出版品，從紙張、印刷、字級系統，到限量包裝全程主導。</p>
+          </header>
+          <div class="modal__hero modal__hero--07" data-zoom data-zoom-src="" data-caption="Type Specimen · Cover">
+            <!-- 1920×1080 封面圖：<img src="case-07-cover.jpg" alt="Type Specimen 封面" /> -->
+            <span class="modal__hero-label">Cover</span>
+          </div>
+          <div class="modal__body">
+            <aside class="modal__aside">
+              <dl class="modal__spec">
+                <div><dt>客戶</dt><dd>Folio Press</dd></div>
+                <div><dt>年份</dt><dd>2024</dd></div>
+                <div><dt>角色</dt><dd>藝術指導</dd></div>
+                <div><dt>規格</dt><dd>96 頁 · 平版印刷</dd></div>
+                <div><dt>發行</dt><dd>500 本限量</dd></div>
+              </dl>
+            </aside>
+            <div class="modal__prose">
+              <h3>關於</h3>
+              <p>從字體挑選、排版、紙張、印刷、裝訂到包裝 — 一本給設計同行的字體年鑑。每頁的留白、字級、行距都是研究的對象。</p>
+              <h3>製作</h3>
+              <p>採用 Munken Pure 240gsm 內頁，封面使用裸背線裝。共三種印刷工法 — 平版、燙金、打凸。從草圖到出版花了七個月。</p>
+              <h3>成果</h3>
+              <ul class="modal__metrics">
+                <li><span>500</span><em>限量發行</em></li>
+                <li><span>2 週</span><em>售罄</em></li>
+                <li><span>設計獎</span><em>金蝶入圍</em></li>
+              </ul>
+            </div>
+          </div>
+        </article>
+
+        <!-- ====== Case 08 ====== -->
+        <article class="modal__case" data-case="08" hidden>
+          <header class="modal__head">
+            <p class="modal__eyebrow">Case Study · 08 — 平面 · 報告</p>
+            <h2 class="modal__title">Mono Annual ·<br />年度報告設計</h2>
+            <p class="modal__lede">科技基金會的年度報告 — 142 頁的數據與敘事，轉成可閱讀的當代設計。中英雙語雙版設計。</p>
+          </header>
+          <div class="modal__hero modal__hero--08" data-zoom data-zoom-src="" data-caption="Mono Annual · Cover">
+            <!-- 1920×1080 封面圖：<img src="case-08-cover.jpg" alt="Mono Annual 封面" /> -->
+            <span class="modal__hero-label">Cover</span>
+          </div>
+          <div class="modal__body">
+            <aside class="modal__aside">
+              <dl class="modal__spec">
+                <div><dt>客戶</dt><dd>Mono Foundation</dd></div>
+                <div><dt>年份</dt><dd>2023</dd></div>
+                <div><dt>角色</dt><dd>主視覺設計</dd></div>
+                <div><dt>規格</dt><dd>142 頁 · 雙語</dd></div>
+                <div><dt>發行</dt><dd>3,000 本</dd></div>
+              </dl>
+            </aside>
+            <div class="modal__prose">
+              <h3>關於</h3>
+              <p>把抽象的科技政策、數據、團隊敘事，轉成清楚易讀的報告。資訊圖表為主軸，文字節奏為骨架。</p>
+              <h3>製作</h3>
+              <p>定義一套網格系統，貫穿全書 — 從目錄到尾頁。每章節皆有專屬色階。</p>
+              <h3>成果</h3>
+              <ul class="modal__metrics">
+                <li><span>142</span><em>頁</em></li>
+                <li><span>双語</span><em>中／英</em></li>
+                <li><span>3K</span><em>實體發行</em></li>
+              </ul>
+            </div>
+          </div>
+        </article>
+
+        <!-- ====== Case 09 ====== -->
+        <article class="modal__case" data-case="09" hidden>
+          <header class="modal__head">
+            <p class="modal__eyebrow">Case Study · 09 — 包裝 · 識別</p>
+            <h2 class="modal__title">Folio System ·<br />咖啡品牌系統</h2>
+            <p class="modal__lede">獨立咖啡品牌的多季識別與包裝系統 — 共 18 款 SKU，共用骨架，各自表情。</p>
+          </header>
+          <div class="modal__hero modal__hero--09" data-zoom data-zoom-src="" data-caption="Folio System · Cover">
+            <!-- 1920×1080 封面圖：<img src="case-09-cover.jpg" alt="Folio System 封面" /> -->
+            <span class="modal__hero-label">Cover</span>
+          </div>
+          <div class="modal__body">
+            <aside class="modal__aside">
+              <dl class="modal__spec">
+                <div><dt>客戶</dt><dd>Kuro Coffee</dd></div>
+                <div><dt>年份</dt><dd>2022</dd></div>
+                <div><dt>角色</dt><dd>創意總監</dd></div>
+                <div><dt>規格</dt><dd>18 款 SKU</dd></div>
+                <div><dt>產地</dt><dd>5 國</dd></div>
+              </dl>
+            </aside>
+            <div class="modal__prose">
+              <h3>關於</h3>
+              <p>用一套包裝模板對應 18 款豆子，差異只在色票、字體大小、與一行小字。讓品牌得以快速擴張，又保有秩序感。</p>
+              <h3>方法</h3>
+              <p>把識別系統做成「程式」— 每款新品都依參數產出。從版型、字體、色票到印刷規格，全部模組化。</p>
+              <h3>成果</h3>
+              <ul class="modal__metrics">
+                <li><span>4.6×</span><em>三年銷量成長</em></li>
+                <li><span>18</span><em>款 SKU</em></li>
+                <li><span>5 國</span><em>進口豆款</em></li>
+              </ul>
+            </div>
+          </div>
+        </article>
+
+        <!-- ====== Case 10 ====== -->
+        <article class="modal__case" data-case="10" hidden>
+          <header class="modal__head">
+            <p class="modal__eyebrow">Case Study · 10 — 影像 · 品牌</p>
+            <h2 class="modal__title">Atelier Film ·<br />品牌形象短片</h2>
+            <p class="modal__lede">90 秒的慢電影 — 為東京護膚品牌寫的視覺情書。腳本、視覺、剪輯一體掌握。</p>
+          </header>
+          <div class="modal__hero modal__hero--video modal__hero--10" data-zoom data-zoom-type="video" data-zoom-src="" data-caption="Atelier Film · 1:30">
+            <!-- 影片：解開以下其一即可 -->
+            <!-- ① Vimeo 嵌入（建議）：
+              <iframe src="https://player.vimeo.com/video/【影片ID】?title=0&byline=0&portrait=0&color=ff4200"
+                      allow="autoplay; fullscreen" allowfullscreen></iframe>
+            -->
+            <!-- ② 本地 MP4（1920×1080，H.264）：
+              <video controls preload="metadata" poster="case-10-poster.jpg">
+                <source src="case-10.mp4" type="video/mp4" />
+              </video>
+            -->
+            <span class="modal__hero-label">Film · 1:30</span>
+          </div>
+          <div class="modal__body">
+            <aside class="modal__aside">
+              <dl class="modal__spec">
+                <div><dt>客戶</dt><dd>Atelier Tokyo</dd></div>
+                <div><dt>年份</dt><dd>2024</dd></div>
+                <div><dt>角色</dt><dd>導演 · 剪輯</dd></div>
+                <div><dt>長度</dt><dd>1:30</dd></div>
+                <div><dt>得獎</dt><dd>坎城短片入圍</dd></div>
+              </dl>
+            </aside>
+            <div class="modal__prose">
+              <h3>關於</h3>
+              <p>不講產品，只講皮膚與光的關係。整支片只有環境音與一句旁白。從腳本到後期 12 週完成。</p>
+              <h3>方法</h3>
+              <p>底片質感的數位攝影 — 用 Sony Venice 拍攝、DaVinci 調色。每個鏡頭都對應一個「靜謐瞬間」。</p>
+              <h3>成果</h3>
+              <ul class="modal__metrics">
+                <li><span>1:30</span><em>片長</em></li>
+                <li><span>坎城</span><em>短片獎入圍</em></li>
+                <li><span>2.4M</span><em>線上觀看</em></li>
+              </ul>
+            </div>
+          </div>
+        </article>
+
+        <!-- ====== Case 11 ====== -->
+        <article class="modal__case" data-case="11" hidden>
+          <header class="modal__head">
+            <p class="modal__eyebrow">Case Study · 11 — 影像 · 產品</p>
+            <h2 class="modal__title">Lumen Reel ·<br />產品宣傳影片</h2>
+            <p class="modal__lede">Lumen AI 的 60 秒產品片 — 以動態介面為主體，讓抽象的 AI 能力，變成可看見的節奏。</p>
+          </header>
+          <div class="modal__hero modal__hero--video modal__hero--11" data-zoom data-zoom-type="video" data-zoom-src="" data-caption="Lumen Reel · 0:60">
+            <!-- 影片：見 case-10 註解 -->
+            <span class="modal__hero-label">Reel · 0:60</span>
+          </div>
+          <div class="modal__body">
+            <aside class="modal__aside">
+              <dl class="modal__spec">
+                <div><dt>客戶</dt><dd>Lumen Inc.</dd></div>
+                <div><dt>年份</dt><dd>2025</dd></div>
+                <div><dt>角色</dt><dd>動態設計</dd></div>
+                <div><dt>長度</dt><dd>0:60</dd></div>
+                <div><dt>軟體</dt><dd>After Effects</dd></div>
+              </dl>
+            </aside>
+            <div class="modal__prose">
+              <h3>關於</h3>
+              <p>把產品介面變成一支音樂錄影帶 — 文字、圖表、按鈕，照節拍跳。配樂用 Tycho 〈Awake〉。</p>
+              <h3>方法</h3>
+              <p>所有畫面在 After Effects 重建一遍 — 不是錄屏。每個動效都對齊節拍。</p>
+              <h3>成果</h3>
+              <ul class="modal__metrics">
+                <li><span>0:60</span><em>片長</em></li>
+                <li><span>+38%</span><em>登錄頁轉換</em></li>
+                <li><span>180K</span><em>第一週觀看</em></li>
+              </ul>
+            </div>
+          </div>
+        </article>
+
+        <!-- ====== Case 12 ====== -->
+        <article class="modal__case" data-case="12" hidden>
+          <header class="modal__head">
+            <p class="modal__eyebrow">Case Study · 12 — 影像 · 紀錄</p>
+            <h2 class="modal__title">Studio Process ·<br />創作紀錄短片</h2>
+            <p class="modal__lede">工作室紀錄短片系列 — 七位設計師、七種思考方式。三集，每集約四分鐘。</p>
+          </header>
+          <div class="modal__hero modal__hero--video modal__hero--12" data-zoom data-zoom-type="video" data-zoom-src="" data-caption="Studio Process · 3 集 × 4 分鐘">
+            <!-- 影片：見 case-10 註解 -->
+            <span class="modal__hero-label">Documentary · 3×4:00</span>
+          </div>
+          <div class="modal__body">
+            <aside class="modal__aside">
+              <dl class="modal__spec">
+                <div><dt>客戶</dt><dd>內部紀錄</dd></div>
+                <div><dt>年份</dt><dd>2023</dd></div>
+                <div><dt>角色</dt><dd>導演 · 製作</dd></div>
+                <div><dt>長度</dt><dd>3 集 · 各 4 分鐘</dd></div>
+                <div><dt>平台</dt><dd>Vimeo</dd></div>
+              </dl>
+            </aside>
+            <div class="modal__prose">
+              <h3>關於</h3>
+              <p>沒有訪談、沒有旁白 — 只看設計師工作的 200 小時剪成 12 分鐘。讓觀眾自己去解讀。</p>
+              <h3>方法</h3>
+              <p>每位設計師跟拍三天，定點機位 + 手持。剪輯時依「節奏」而不是「敘事」做切點。</p>
+              <h3>成果</h3>
+              <ul class="modal__metrics">
+                <li><span>3 集</span><em>共 12 分鐘</em></li>
+                <li><span>Vimeo</span><em>Staff Picks</em></li>
+                <li><span>520K</span><em>累計觀看</em></li>
+              </ul>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </div>
+
+  <!-- ============= LIGHTBOX（點擊圖片放大）============= -->
+  <div class="lightbox" id="lightbox" aria-hidden="true" role="dialog" aria-modal="true" aria-label="圖片放大檢視">
+    <button class="lightbox__close" data-lightbox-close aria-label="關閉">
+      <span>關閉</span>
+      <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true">
+        <path d="M1 1l12 12M13 1L1 13" stroke="currentColor" stroke-width="1" />
+      </svg>
+    </button>
+
+    <button class="lightbox__nav lightbox__prev" data-lightbox-prev aria-label="上一張">
+      <svg width="22" height="14" viewBox="0 0 22 14" fill="none" aria-hidden="true">
+        <path d="M22 7H0M6 1L0 7l6 6" stroke="currentColor" stroke-width="1"/>
+      </svg>
+    </button>
+    <button class="lightbox__nav lightbox__next" data-lightbox-next aria-label="下一張">
+      <svg width="22" height="14" viewBox="0 0 22 14" fill="none" aria-hidden="true">
+        <path d="M0 7h22M16 1l6 6-6 6" stroke="currentColor" stroke-width="1"/>
+      </svg>
+    </button>
+
+    <figure class="lightbox__stage">
+      <img class="lightbox__img" src="" alt="" />
+      <video class="lightbox__video" controls hidden></video>
+      <figcaption class="lightbox__caption"></figcaption>
+    </figure>
+
+    <span class="lightbox__counter"></span>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
